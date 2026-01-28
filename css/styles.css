@@ -1,0 +1,76 @@
+body {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #000000;
+}
+
+ .section {
+  padding: 100px 0;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(120deg, #000000, #333);
+  color: white;
+}
+
+.section-title {
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #000000;
+  color: white;
+}
+
+.lead{
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.courses {
+    text-align: center;
+}
+
+#habilidades img{
+    max-width: 100;
+    height: auto;
+}
+
+/* ===== CONTACTO RESPONSIVO ===== */
+
+/* Desktop: igualar alturas */
+@media (min-width: 768px) {
+  .contact-social,
+  .contact-form {
+    min-height: 420px;
+  }
+}
+
+/* Mobile: que no se vean estirados */
+@media (max-width: 767px) {
+
+  .contact-social,
+  .contact-form {
+    min-height: auto;
+    padding: 25px 20px;
+  }
+
+  .contact-social {
+    margin-bottom: 30px;
+  }
+
+  .social-link {
+    font-size: 3rem;
+    margin: 0 12px;
+  }
+}
