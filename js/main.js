@@ -1,9 +1,5 @@
 const form = document.getElementById("contactForm");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+form.addEventListener("submit", () => {
   alert("Submitted successfully!");
-  form.reset();
 });
-
-
