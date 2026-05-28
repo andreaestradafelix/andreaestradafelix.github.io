@@ -1,0 +1,88 @@
+
+/* ────────────────────────────────
+   NAVBAR
+──────────────────────────────── */
+/* sticky wrapper — keeps nav + mobile menu pinned together */
+.ae-nav-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+}
+
+.ae-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.2rem 2rem .8rem;
+  border-bottom: 1px solid #eee;
+}
+
+.ae-brand {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 550;
+  letter-spacing: 3px;
+  color: #000;
+  text-decoration: none;
+}
+
+.ae-nav-links {
+  margin-left: auto;
+}
+
+.ae-nav-links a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 1.8rem;
+  font-size: 1rem;
+}
+
+.ae-nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger */
+.ae-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #000;
+  line-height: 1;
+}
+
+.ae-mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: white;
+  padding: .75rem 2rem 1rem;
+  border-top: 1px solid #eee;
+}
+
+.ae-mobile-menu a {
+  color: #000;
+  text-decoration: none;
+  padding: .5rem 0;
+  font-size: .95rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ae-mobile-menu a:last-child {
+  border-bottom: none;
+}
+
+.ae-mobile-menu.open {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .ae-nav-links  { display: none; }
+  .ae-hamburger  { display: block; }
+  .ae-brand      { width: auto; flex: 1; font-size: 1.6rem; letter-spacing: 2px; }
+}
+
+@media (max-width: 400px) {
+  .ae-nav   { padding: .8rem 1rem; }
+  .ae-brand { font-size: 1.2rem; }
+}

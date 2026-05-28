@@ -1,0 +1,23 @@
+.ae-footer {
+    padding: 1.4rem;
+    text-align: center;
+    background: white;
+}
+
+.ae-footer-icons a {
+    color: #aaa;
+    font-size: 1.15rem;
+    margin: 0 .45rem;
+    text-decoration: none;
+}
+
+.ae-footer-icons a:hover {
+    color: #0033FF;
+}
+
+.ae-footer p {
+    font-size: .90rem;
+    color: #aaa;
+    margin-top: .45rem;
+    margin-bottom: 0;
+}

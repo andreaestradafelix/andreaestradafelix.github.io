@@ -1,0 +1,40 @@
+
+.ae-tech {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid ;
+}
+
+.ae-tech-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: .4rem;
+}
+
+.ae-tech hr {
+  border-color: #2563eb;
+  opacity: 1;
+  margin-bottom: 1.4rem;
+}
+
+.ae-cat {
+  font-size: 1rem;
+  font-weight: 650;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: .45rem;
+  letter-spacing: .5px;
+}
+
+.ae-tlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ae-tlist li {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.5;
+}
+

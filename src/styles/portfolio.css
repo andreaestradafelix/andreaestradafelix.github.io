@@ -1,0 +1,95 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body, h1, h2,h3, h4, h5, h6,
+button,input, textarea, select {
+  font-family: "Gabarito", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* ────────────────────────────────
+   WHAT I BUILD
+──────────────────────────────── */
+.ae-build {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.ae-build h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.ae-build-items {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: black;
+  line-height: 1.8;
+  letter-spacing: .3px;
+}
+
+
+
+
+/* ────────────────────────────────
+   TICKER
+──────────────────────────────── */
+.ae-ticker {
+  background: #000;
+  color: #fff;
+  padding: .5rem 0;
+  overflow: hidden;
+  margin: 1.2rem 0;
+}
+
+.ae-ticker-inner {
+  display: flex;
+  gap: 2rem;
+  animation: tick 24s linear infinite;
+  white-space: nowrap;
+}
+
+.ae-ticker-inner span {
+  font-size: .8rem;
+  letter-spacing: 1px;
+  opacity: .9;
+}
+
+@keyframes tick {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+/* responsive — tablet (≤768px) */
+@media (max-width: 768px) {
+  .ae-build         { padding: 2.5rem 1.5rem; }
+  .ae-build h2      { font-size: 1.5rem; }
+}
+
+
+/* responsive — mobile (≤480px) */
+@media (max-width: 480px) {
+  .ae-build            { padding: 2rem 1.2rem; }
+  .ae-build h2         { font-size: 1.3rem; }
+  .ae-build-items      { font-size: .9rem; }
+  .ae-ticker-inner span { font-size: .7rem; }
+}

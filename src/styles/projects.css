@@ -1,0 +1,95 @@
+.ae-projects {
+   background: white;
+   padding: 3rem 5rem;
+}
+
+.ae-projects h2 {
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+
+.ae-projects hr {
+   border-color: black;
+   margin-bottom: 1.5rem;
+}
+
+.ae-proj {
+   margin-bottom: 1.3rem;
+}
+
+.pn {
+   color: black;
+   font-size: 1rem;
+   margin-right: .4rem;
+}
+
+.pt {
+   font-weight: 500;
+   font-size: 1rem;
+   color: #000;
+   text-decoration: none;
+}
+
+.pt:hover {
+   text-decoration: underline;
+}
+
+.ps {
+   color: #666;
+   font-size: .85rem;
+   padding-left: 1.6rem;
+   margin-top: .1rem;
+}
+
+/* ── inner wrapper limita a ~8 columnas ── */
+.ae-proj-inner {
+  max-width: 66.67%;
+  margin: 0 auto;
+}
+
+/* ── tech stack grid ── */
+.ae-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.ae-tech-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.ae-cat {
+  font-size: .72rem;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin: 0 0 .45rem;
+}
+
+.ae-tlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ae-tlist li {
+  font-size: .9rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .ae-projects    { padding: 2.5rem 2rem; }
+  .ae-proj-inner  { max-width: 100%; }
+  .ae-tech-grid   { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+}
+
+@media (max-width: 480px) {
+  .ae-projects  { padding: 2rem 1.2rem; }
+  .ae-tech-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .pt           { font-size: .92rem; }
+  .ps           { font-size: .8rem; padding-left: 1.2rem; }
+}
+
