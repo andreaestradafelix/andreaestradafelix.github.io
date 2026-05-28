@@ -3,8 +3,8 @@ import '../styles/available.css';
 export default function Available() {
   const handleDownload = () => {
     const a = document.createElement('a');
-    a.href = '/cv/Andrea_Estrada_CV.pdf';
-    a.download = 'Andrea_Estrada_CV.pdf';
+    a.href = '/cv/CV_ANDREA_ESTRADA_FELIX.pdf';
+    a.download = 'CV_ANDREA_ESTRADA_FELIX.pdf';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
